@@ -13,29 +13,23 @@
 </head>
 
 <body>
-  <div id="particles-js"></div>
-  <div class="welcome-container" id="welcome-container">
     <div class="navbar">
-      <div class="logo">
-        <h1>Ansumana Darboe</h1>
+        <div class="logo">
+          <h1>Ansumana Darboe</h1>
+        </div>
+        <div class="topnav" id="myTopnav">
+          <a href="#">home</a>
+          <a href="#myintro">about</a>
+          <a href="#services">services</a>
+          <a href="#skills">tech</a>
+          <!--<a href="#arts">art</a>-->
+          <!--<a href="#projects">projects</a>-->
+          <a href="#contact">contact</a>
+          <a style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
       </div>
-      <div class="topnav" id="myTopnav">
-        <a href="#">home</a>
-        <a href="#myintro">about</a>
-        <a href="#services">services</a>
-        <a href="#skills">tech</a>
-        <!--<a href="#arts">art</a>-->
-        <!--<a href="#projects">projects</a>-->
-        <a href="#contact">contact</a>
-        <a style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-      </div>
-    </div>
-    <div class="section aboutme" data-anchor="aboutme">
-      <div class="opaque-bg animated fadeInDown" style="text-align:center">
-        <p><span id="holder"></span><span class="blinking-cursor">|</span></p>
-      </div>
-    </div>
-    <div class="social account">
+  
+  <div class="social account">
       <ol>
         <li>
           <a href="https://www.facebook.com/royal.son.946" target="_blank" alt="facebook" title="My Facebook">
@@ -65,6 +59,14 @@
         </li>
       </ol>
     </div>
+  <div class="home-container" id="welcome-container">
+    <div id="particles-js"></div>
+    <div class="aboutme" data-anchor="aboutme">
+      <div class="opaque-bg animated fadeInDown">
+        <p><span id="holder"></span><span class="blinking-cursor">|</span></p>
+      </div>
+    </div>
+  
     <div class="bounce-icon">
       <i id="moveDown" class="fa fa-chevron-down fa-3x bounce"></i>
     </div>
@@ -75,7 +77,7 @@
         <span class="section-title about">about me</span>
       </div>
       <div class="intro">
-        <div class="row max">
+        <div class="about-content">
           <div class="iBox">
             <div id="iB" class="imgBox2"></div>
           </div>
@@ -181,7 +183,7 @@
   </div>
 </div>-->
 
-  <div class="contact-container" id="contact">
+  <div class="container" id="contact">
     <div class="row section-banner">
       <span class="section-title about">contact</span>
     </div>
@@ -215,32 +217,32 @@
       <button class="btn-email" type="button" onclick="location.href='mailto:ansumana.d@yahoo.com'">
         Send an email</button>
       </div>
-      <div class="footer-content">
-        <footer class="mainfooter">
-          <div class="social">
-            <ol>
-              <li><a target="_blank" alt="facebook" title="My Facebook" href="https://www.facebook.com/royal.son.946"><i
-                    class="fa fa-facebook" area-hidden="true"></i></a></li>
-    
-              <li><a target="_blank" alt="twitter" title="My Twitter" href="https://twitter.com/AnsuD06"><i class="fa fa-twitter"
-                    area-hidden="true"></i></a></li>
-              <li>
-                <a href="https://github.com/anamusna" target="_blank" alt="github" title="My Github">
-                  <i class="fa fa-github" area-hidden="true"></i>
-                </a>
-              </li>
-    
-              <li><a target="_blank" alt="instagram" title="My Instagram" href="https://www.instagram.com/royal.son.946/?hl=de"><i
-                    class="fa fa-instagram" area-hidden="true"></i></a></li>
-    
-              <li><a target="_blank" alt="linkedin" title="My Linkedin" href="https://www.linkedin.com/in/ansumana-darboe-a202a9146/"><i
-                    class="fa fa-linkedin" area-hidden="true"></i></a></li>
-            </ol>
-          </div>
-          <p> &copy; 2018 - All Rights Reserved <br>
-            <a href="#myintro" title="My Site">Ansumana</a></p>
-        </footer>
+  </div>
+  <div class="footer-content">
+    <footer class="mainfooter">
+      <div class="social">
+        <ol>
+          <li><a target="_blank" alt="facebook" title="My Facebook" href="https://www.facebook.com/royal.son.946"><i
+                class="fa fa-facebook" area-hidden="true"></i></a></li>
+
+          <li><a target="_blank" alt="twitter" title="My Twitter" href="https://twitter.com/AnsuD06"><i class="fa fa-twitter"
+                area-hidden="true"></i></a></li>
+          <li>
+            <a href="https://github.com/anamusna" target="_blank" alt="github" title="My Github">
+              <i class="fa fa-github" area-hidden="true"></i>
+            </a>
+          </li>
+
+          <li><a target="_blank" alt="instagram" title="My Instagram" href="https://www.instagram.com/royal.son.946/?hl=de"><i
+                class="fa fa-instagram" area-hidden="true"></i></a></li>
+
+          <li><a target="_blank" alt="linkedin" title="My Linkedin" href="https://www.linkedin.com/in/ansumana-darboe-a202a9146/"><i
+                class="fa fa-linkedin" area-hidden="true"></i></a></li>
+        </ol>
       </div>
+      <p> &copy; 2018 - All Rights Reserved <br>
+        <a href="#myintro" title="My Site">Ansumana</a></p>
+    </footer>
   </div>
 </body>
 <script src="main.js"></script>
