@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 body {
-  /*scroll-behavior: smooth;*/
+  scroll-behavior: smooth;
   overflow-x: hidden;
   margin: auto;
   background-color: #f2f2f2;
@@ -137,12 +137,11 @@ body {
   font-size: 16px;
   padding: 10px 5px;
   font-family: monospace;
-  color: blue;
+  color: white;
   margin: auto 20px;
 }
 .topnav a:hover {
   color: green;
-  border-bottom: 1px solid green;
 }
 .topnav a.icon {
   display: none;
@@ -263,9 +262,9 @@ body {
   margin-top: 20%;
 }
 .service-text {
-  width: 75%;
+  /*width: 75%;*/
   font-size: 20px;
-  margin-left: 10px;
+  margin: 10px;
 }
 .service-text p {
   text-align: left;
@@ -487,9 +486,10 @@ label {
 @media screen and (max-width: 600px) {
   .topnav.responsive {
     position: relative;
-    margin-top: 30px;
+    margin: 30px auto;
     z-index: 99;
     overflow: visible;
+    
   }
   .topnav a.icon {
     float: right;
@@ -510,7 +510,6 @@ label {
     padding-top: 10px;
   }
   .email-btn {
-    background-color: red;
     margin-bottom: 30vh;
   }
   * {
