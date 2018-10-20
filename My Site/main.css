@@ -150,7 +150,7 @@ body {
   display: inline;
   float: right;
   font-size: 18px;
-  margin: 10px;
+  margin-top: 10px;
 }
 
 .nav > .nav-links > a {
@@ -373,36 +373,14 @@ fieldset {
 label {
   float: left;
 }
-.vl {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
-  border: 2px solid #ddd;
-  width: 200px;
-  margin-top: 40px;
-  background-color: #f2f2f2;
-}
-.vl-innertext {
-  position: absolute;
-  top: 50%;
-  text-align: center;
-  transform: translate(50%, -50%);
-  background-color: #cccccc;
-  border: 1px solid #ccc;
-  border-radius: 50%;
-  padding: 8px 10px;
-  right: 50%;
-  font-size: 22px;
-}
 .email-btn {
-  position: absolute;
-  left: 45%;
+  float: right;
   width: 200px;
-  margin-top: 80px;
-  background-color: #f2f2f2;
+  margin: auto;
+  border: 4px;
 }
 .btn-email {
-  position: absolute;
+  float: right;
   text-align: center;
   background-color: #cccccc;
   padding: 5px auto;
@@ -415,7 +393,6 @@ label {
   float: left;
   margin: auto;
   background-color: #333;
-  margin-top: 150px;
   position: fixed;
   z-index: -777;
 }
@@ -495,13 +472,15 @@ label {
     display: inline-block;
     position: absolute;
     right: 0px;
-    top: 0px;
+    top: 10px;
   }
   .nav > .nav-btn > label {
     display: inline-block;
     width: 50px;
     height: 50px;
     padding: 13px;
+    font-size: 22px;
+    color: #fff;
   }
   .nav > .nav-btn > label:hover {
     background-color: rgba(0, 0, 0, 0.3);
