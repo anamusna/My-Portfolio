@@ -32,17 +32,19 @@ body {
 
 .account {
   position: absolute;
-  bottom: 15vh;
+  bottom: 20vh;
   margin: auto;
   text-align: center;
   align-content: center;
+  z-index: 2;
 }
 /* Scroll down indicator (bouncing) */
 .bounce-icon {
   position: absolute;
   bottom: 1vh;
-  font-size: 10px;
+  font-size: 7px;
   margin: auto 48vw;
+  z-index: 2;
 }
 @-webkit-keyframes bounce {
   0%,
@@ -175,7 +177,7 @@ body {
 }
 .aboutme {
   position: absolute;
-  bottom: 20vh;
+  bottom: 30vh;
   text-align: center;
   padding: 5px;
   width: 100%;
@@ -248,9 +250,15 @@ body {
   border-radius: 4px;
   /*color: #ffffff;*/
 }
-.intro-text p {
+.intro-text h3 {
   padding-top: 20%;
   margin: auto 20px;
+  text-align: center;
+}
+.intro-text p {
+ padding-top: 20px;
+  margin: auto 20px;
+  font-size: 20px;
 }
 .service-content {
   margin: auto;
@@ -328,8 +336,8 @@ body {
   margin: auto;
 }
 .contact {
-  margin-bottom: 32vh;
-  z-index: 44;
+  z-index: 4;
+  margin-bottom: 20vh;
 }
 .contact-form {
   width: 80%;
@@ -532,7 +540,7 @@ label {
   .intro,
   .max,
   .about-content,
-  .iBox,
+  
   .skills-img,
   .myskills,
   .service-content,
@@ -540,8 +548,13 @@ label {
   .me,
   .myskills,
   .services {
-    width: 100%;
+    width: 95%;
     margin: 15px auto;
+  }
+  .iBox{
+    width: 60%;
+    margin: auto;
+    margin-top: 15px;
   }
   .section-banner {
     margin-top: 40px;
