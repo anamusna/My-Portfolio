@@ -3,22 +3,12 @@ $(document).ready(function () {
   $(window).scroll(function () {
     // checks if window is scrolled more than an amount of px, adds/removes solid class
     if ($(this).scrollTop() > 700) {
-      $('.navbar').addClass('solid');
+      $('.nav').addClass('solid');
     } else {
-      $('.navbar').removeClass('solid');
+      $('.nav').removeClass('solid');
     }
   });
 });
-
-//navbar icon
-function myFunction() {
-  let x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
 
 //greeting text
 $(document).ready(function () {

@@ -102,63 +102,70 @@ body {
   -webkit-animation: bounce 2s infinite;
   animation: bounce 2s infinite;
 }
-.navbar.solid {
-  width: 100vw;
+.nav.solid {
   margin: auto;
-  background-color: #f2f2f2;
+  background-color: #333;
   transition: background-color 1s ease 0s;
   box-shadow: 0px 0px 10px 0px rgba(19, 35, 47, 0.4);
   height: auto;
   z-index: 999;
 }
-.navbar.solid a {
+.nav.solid a {
   color: tomato;
 }
-.navbar {
-  margin: auto;
-  display: flex;
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: 'segoe ui';
+}
+
+.nav {
+  height: 80px;
+  width: 100%;
+  background: transparent;
   position: fixed;
-  top: 0;
-  left: 0px;
-  width: 100vw;
-  overflow: hidden;
-  z-index: 99;
 }
-.topnav {
-  position: absolute;
-  /*width: 50%;*/
-  right: 10px;
-  top: 40px;
-  z-index: 11;
+
+.nav > .nav-header {
+  display: inline;
+ 
 }
-.topnav a {
-  text-decoration: none;
-  text-align: center;
-  font-size: 16px;
-  padding: 10px 5px;
-  font-family: monospace;
-  color: white;
-  margin: auto 20px;
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 15px;
+   margin-top: 10px;
 }
-.topnav a:hover {
-  color: green;
-}
-.topnav a.icon {
+
+.nav > .nav-btn {
   display: none;
 }
-.logo {
-  width: 20vw;
-  float: left;
-  margin-left: 10px;
-  top: 0px;
-  z-index: 5;
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+  margin: 10px;
 }
-.logo h1 {
-  font-size: 30px;
-  color: tomato;
-  padding-top: 20px;
-  font-weight: 100;
-  width: 300px;
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 15px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav > #nav-check {
+  display: none;
 }
 .opaque-bg {
   margin-left: auto;
@@ -407,7 +414,7 @@ label {
   width: 100%;
   float: left;
   margin: auto;
-  background-color: rgb(64, 64, 64);
+  background-color: #333;
   margin-top: 150px;
   position: fixed;
   z-index: -777;
@@ -484,44 +491,54 @@ label {
 }
 
 @media screen and (max-width: 600px) {
-  .topnav.responsive {
-    position: relative;
-    margin: 30px auto;
-    z-index: 99;
-    overflow: visible;
-    
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
   }
-  .topnav a.icon {
-    float: right;
-    display: block;
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
   }
-  .topnav.responsive .icon {
-    position: fixed;
-    right: 10px;
-    top: 40px;
-    color: red;
-    display: block;
+  .nav > .nav-btn > label:hover {
+    background-color: rgba(0, 0, 0, 0.3);
   }
-  .topnav.responsive a {
-    float: none;
+  .nav > .nav-btn > label > span {
     display: block;
-    text-align: left;
-    transition: all 0.4s ease;
-    padding-top: 10px;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) + .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked + .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
   }
   .email-btn {
     margin-bottom: 30vh;
   }
   * {
     overflow: visible;
-  }
-  .navbar {
-    width: 100%;
-    margin: auto;
-    overflow: visible;
-  }
-  .topnav a {
-    display: none;
   }
   .aboutme p {
     font-size: 15px;
