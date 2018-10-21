@@ -13,21 +13,24 @@
 </head>
 
 <body>
-  <div class="navbar">
-    <div class="logo">
-      <h1>Ansumana Darboe</h1>
-    </div>
-    <div class="topnav" id="myTopnav">
-      <a href="#">home</a>
-      <a href="#myintro">about</a>
-      <a href="#services">services</a>
-      <a href="#skills">tech</a>
-      <!--<a href="#arts">art</a>-->
-      <!--<a href="#projects">projects</a>-->
-      <a href="#contact">contact</a>
-      <a style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-    </div>
-  </div>
+    <div class="nav">
+        <div class="nav-header">
+          <div class="nav-title">Ansumana Darboe</div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">&#9776;</label>
+        </div>
+        <input type="checkbox" id="nav-check">
+        <div class="nav-links">
+                <a href="#">home</a>
+                <a href="#myintro">about</a>
+                <a href="#services">services</a>
+                <a href="#skills">technologies</a>
+                <!--<a href="#arts">art</a>-->
+                <!--<a href="#projects">projects</a>-->
+                <a href="#contact">contact</a>
+        </div>
+      </div>
 
   <div class="social account">
     <ol>
@@ -85,9 +88,9 @@
           <div class="me text-center">
             <div class="intro-text">
               <p>A front-end web developer with an eye for design and a strong desire to learn and create ideas into
-                reality.
-                I firmly believe in life long learning and I'm constantly exploring new ideas and technologies.
-                I tend to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
+                reality. <br> <br> I firmly believe in life long learning and I'm constantly exploring new concepts and technologies.
+                I tend to code things from scratch and enjoy bringing ideas to life in the browser.</p>
+                <hr>
             </div>
           </div>
         </div>
@@ -203,23 +206,17 @@
         <br>
         <fieldset>
           <label>Message *</label>
-          <textarea id="message" name="subject" style="height:70px" placeholder="Write something.."></textarea>
+          <textarea id="message" name="subject" style="height:80px" placeholder="Write something.."></textarea>
 
           <input class="btn" type="submit" name="submit" value="Send">
-
+          <div class="email-btn">
+              <button class="btn-email" type="button" onclick="location.href='mailto:ansumana.d@yahoo.com'">
+                Send an email</button>
+            </div>
         </fieldset>
       </form>
     </div>
-    <div class="container">
-      <div class="vl">
-        <span class="vl-innertext">or</span>
-      </div>
-      <div class="email-btn text-center">
-        <button class="btn-email" type="button" onclick="location.href='mailto:ansumana.d@yahoo.com'">
-          Send an email</button>
-      </div>
     </div>
-  </div>
 
   <div class="footer-content">
     <footer class="mainfooter">
@@ -244,11 +241,9 @@
         </ol>
       </div>
       <p> &copy; 2018 - All Rights Reserved <br>
-        <a href="#myintro" title="My Site">Ansumana</a></p>
+        <a href="#myintro" title="My Site">Ansumana Darboe</a></p>
     </footer>
   </div>
 </body>
 <script src="main.js"></script>
-<i class="p-1 text-danger fas fa-heart"></i>
-
 </html>

@@ -32,51 +32,20 @@ body {
 
 .account {
   position: absolute;
-  bottom: 15vh;
+  bottom: 25vh;
   margin: auto;
   text-align: center;
   align-content: center;
+  z-index: 2;
 }
 /* Scroll down indicator (bouncing) */
 .bounce-icon {
   position: absolute;
   bottom: 1vh;
-  font-size: 10px;
+  font-size: 7px;
   margin: auto 48vw;
-}
-@-webkit-keyframes bounce {
-  0%,
-  20%,
-  50%,
-  80%,
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateX(0);
-  }
-  40% {
-    -webkit-transform: translateY(-30px);
-    transform: translateY(-30px);
-  }
-  60% {
-    -webkit-transform: translateY(-15px);
-    transform: translateY(-15px);
-  }
-}
-
-@-moz-keyframes bounce {
-  0%,
-  20%,
-  50%,
-  80%,
-  100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-30px);
-  }
-  60% {
-    transform: translateY(-15px);
-  }
+  z-index: 2;
+  color: #ccc;
 }
 
 @keyframes bounce {
@@ -85,15 +54,12 @@ body {
   50%,
   80%,
   100% {
-    -ms-transform: translateY(0);
     transform: translateY(0);
   }
   40% {
-    -ms-transform: translateY(-30px);
     transform: translateY(-30px);
   }
   60% {
-    -ms-transform: translateY(-15px);
     transform: translateY(-15px);
   }
 }
@@ -102,63 +68,70 @@ body {
   -webkit-animation: bounce 2s infinite;
   animation: bounce 2s infinite;
 }
-.navbar.solid {
-  width: 100vw;
+.nav.solid {
   margin: auto;
-  background-color: #f2f2f2;
+  background-color: #333;
   transition: background-color 1s ease 0s;
   box-shadow: 0px 0px 10px 0px rgba(19, 35, 47, 0.4);
   height: auto;
   z-index: 999;
 }
-.navbar.solid a {
+.nav.solid a {
   color: tomato;
 }
-.navbar {
-  margin: auto;
-  display: flex;
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: 'segoe ui';
+}
+
+.nav {
+  height: 80px;
+  width: 100%;
+  background: transparent;
   position: fixed;
-  top: 0;
-  left: 0px;
-  width: 100vw;
-  overflow: hidden;
-  z-index: 99;
 }
-.topnav {
-  position: absolute;
-  /*width: 50%;*/
-  right: 10px;
-  top: 40px;
-  z-index: 11;
+
+.nav .nav-header {
+  display: inline;
+ 
 }
-.topnav a {
-  text-decoration: none;
-  text-align: center;
-  font-size: 16px;
-  padding: 10px 5px;
-  font-family: monospace;
-  color: white;
-  margin: auto 20px;
+
+.nav .nav-header .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 15px;
+   margin-top: 10px;
 }
-.topnav a:hover {
-  color: green;
-}
-.topnav a.icon {
+
+.nav .nav-btn {
   display: none;
 }
-.logo {
-  width: 20vw;
-  float: left;
-  margin-left: 10px;
-  top: 0px;
-  z-index: 5;
+
+.nav .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+  margin-top: 10px;
 }
-.logo h1 {
-  font-size: 30px;
-  color: tomato;
-  padding-top: 20px;
-  font-weight: 100;
-  width: 300px;
+
+.nav .nav-links a {
+  display: inline-block;
+  padding: 15px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+.nav .nav-links a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav #nav-check {
+  display: none;
 }
 .opaque-bg {
   margin-left: auto;
@@ -168,13 +141,13 @@ body {
 }
 .aboutme {
   position: absolute;
-  bottom: 20vh;
+  bottom: 30vh;
   text-align: center;
   padding: 5px;
   width: 100%;
 }
 .aboutme p {
-  color: #ffff;
+  color: white;
   font-weight: 100;
   font-size: 20px;
 }
@@ -190,7 +163,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  /*border-radius: 20%;*/
+  border-radius: 50%;
 }
 .container {
   z-index: 5;
@@ -199,11 +172,11 @@ body {
   height: 100%;
   width: 100%;
   z-index: 2;
-  background-color: #f2f2f2;
+  background-color: #fff;
 }
 .section-banner {
-  margin-top: 150px;
-  margin-bottom: 20px;
+  margin-top: 180px;
+  margin-bottom: 10px;
   text-align: center;
 }
 .section-title {
@@ -213,7 +186,6 @@ body {
 }
 
 .section-title .about {
-  color: rgba(0, 0, 0, 0.54);
   text-shadow: 1px 1px rgba(0, 0, 0, 0.75);
   font-weight: 100;
 }
@@ -233,17 +205,16 @@ body {
 .me {
   background-color: #fff;
   width: 70%;
-  font-size: 1.5em;
+  font-size: 1.7em;
   line-height: 1.7em;
   letter-spacing: 0.03em;
   text-align: left;
-  /*background: transparent;*/
-  border-radius: 4px;
   /*color: #ffffff;*/
 }
 .intro-text p {
-  padding-top: 20%;
+ padding-top: 100px;
   margin: auto 20px;
+  font-size: 20px;
 }
 .service-content {
   margin: auto;
@@ -321,19 +292,19 @@ body {
   margin: auto;
 }
 .contact {
-  margin-bottom: 32vh;
-  z-index: 44;
+  z-index: 4;
+  margin-bottom: 20vh;
 }
 .contact-form {
   width: 80%;
   margin: auto;
   padding: 10px;
-  background: #fff;
   border-radius: 4px;
-  box-shadow: 0px 4px 10px 4px rgba(19, 35, 47, 0.4);
 }
+
 input[type="text"],
 textarea {
+  font-size: 20px;
   width: 100%;
   padding: 7px;
   border: 1px solid #ccc;
@@ -361,45 +332,28 @@ fieldset {
   border: 2px solid #ccc;
   height: 100%;
   background: transparent;
-  background-color: rgba(19, 35, 47, 0.1);
+  box-shadow: 0px 2px 4px 2px rgba(19, 35, 47, 0.4);
+  background-color: #f2f2f2;
 }
 label {
   float: left;
 }
-.vl {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
-  border: 2px solid #ddd;
-  width: 200px;
-  margin-top: 40px;
-  background-color: #f2f2f2;
-}
-.vl-innertext {
-  position: absolute;
-  top: 50%;
-  text-align: center;
-  transform: translate(50%, -50%);
-  background-color: #cccccc;
-  border: 1px solid #ccc;
-  border-radius: 50%;
-  padding: 8px 10px;
-  right: 50%;
-  font-size: 22px;
-}
 .email-btn {
-  position: absolute;
-  left: 45%;
-  width: 200px;
-  margin-top: 80px;
-  background-color: #f2f2f2;
+  float: right;
+  max-width: 200px;
+  margin: auto;
+  text-align: center;  
 }
 .btn-email {
-  position: absolute;
-  text-align: center;
-  background-color: #cccccc;
-  padding: 5px auto;
-  font-size: 22px;
+  border-radius: 5px;
+  border: 1px solid #3498db;
+  padding: 10px auto;
+  margin: auto;
+  font-size: 20px;
+  cursor: pointer;
+  color: red;
+  background: transparent;
+  /*background-color: #4caf50;*/
 }
 .footer-content {
   bottom: 0px;
@@ -407,10 +361,9 @@ label {
   width: 100%;
   float: left;
   margin: auto;
-  background-color: rgb(64, 64, 64);
-  margin-top: 150px;
+  background-color: #333;
   position: fixed;
-  z-index: -777;
+  z-index: -999;
 }
 .mainfooter {
   margin-top: 20px;
@@ -425,10 +378,12 @@ label {
   margin: auto;
   color: white;
   text-align: center;
+  margin-bottom: 15px;
 }
 .mainfooter p a {
   text-decoration: none;
   color: tomato;
+  cursor: pointer;
 }
 .social {
   width: 100%;
@@ -482,46 +437,60 @@ label {
 .social ol li:nth-child:hover(4) {
   color: #007bb6;
 }
+@media screen and (max-width: 800px){
 
+}
 @media screen and (max-width: 600px) {
-  .topnav.responsive {
-    position: relative;
-    margin: 30px auto;
-    z-index: 99;
-    overflow: visible;
-    
+  .nav .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 10px;
   }
-  .topnav a.icon {
-    float: right;
-    display: block;
+  .nav .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+    font-size: 22px;
+    color: #fff;
   }
-  .topnav.responsive .icon {
-    position: fixed;
-    right: 10px;
-    top: 40px;
-    color: red;
-    display: block;
+  .nav .nav-btn label:hover {
+    background-color: rgba(0, 0, 0, 0.3);
   }
-  .topnav.responsive a {
-    float: none;
+  .nav .nav-btn label span {
     display: block;
-    text-align: left;
-    transition: all 0.4s ease;
-    padding-top: 10px;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav .nav-links a {
+    display: block;
+    width: 100%;
+  }
+  .nav #nav-check:not(:checked), .nav-links {
+    height: 0px;
+  }
+  .nav #nav-check:checked, .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
   }
   .email-btn {
     margin-bottom: 30vh;
   }
   * {
     overflow: visible;
-  }
-  .navbar {
-    width: 100%;
-    margin: auto;
-    overflow: visible;
-  }
-  .topnav a {
-    display: none;
   }
   .aboutme p {
     font-size: 15px;
@@ -536,7 +505,7 @@ label {
   .intro,
   .max,
   .about-content,
-  .iBox,
+  
   .skills-img,
   .myskills,
   .service-content,
@@ -544,8 +513,13 @@ label {
   .me,
   .myskills,
   .services {
-    width: 100%;
+    width: 95%;
     margin: 15px auto;
+  }
+  .iBox{
+    width: 80%;
+    margin: auto;
+    margin-top: 15px;
   }
   .section-banner {
     margin-top: 40px;
