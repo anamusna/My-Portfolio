@@ -437,17 +437,8 @@ label {
 .social ol li:nth-child:hover(4) {
   color: #007bb6;
 }
-@media screen and (min-width: 800px){
-  .iBox{
-    width: 80%;
-    margin: auto;
-    margin-top: 15px;
-  }
-  .intro{
-    width: 95%;
-    margin: auto;
-    font-size: 22px;
-  }
+@media screen and (max-width: 800px){
+
 }
 @media screen and (max-width: 600px) {
   .nav > .nav-btn {
@@ -511,6 +502,7 @@ label {
     width: 100%;
     overflow: visible;
   }
+  .intro,
   .max,
   .about-content,
   
@@ -523,6 +515,11 @@ label {
   .services {
     width: 95%;
     margin: 15px auto;
+  }
+  .iBox{
+    width: 80%;
+    margin: auto;
+    margin-top: 15px;
   }
   .section-banner {
     margin-top: 40px;
