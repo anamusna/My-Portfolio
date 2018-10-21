@@ -45,6 +45,7 @@ body {
   font-size: 7px;
   margin: auto 48vw;
   z-index: 2;
+  color: #ccc;
 }
 
 @keyframes bounce {
