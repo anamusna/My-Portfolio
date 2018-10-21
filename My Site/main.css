@@ -95,12 +95,12 @@ body {
   position: fixed;
 }
 
-.nav > .nav-header {
+.nav .nav-header {
   display: inline;
  
 }
 
-.nav > .nav-header > .nav-title {
+.nav .nav-header .nav-title {
   display: inline-block;
   font-size: 22px;
   color: #fff;
@@ -108,29 +108,29 @@ body {
    margin-top: 10px;
 }
 
-.nav > .nav-btn {
+.nav .nav-btn {
   display: none;
 }
 
-.nav > .nav-links {
+.nav .nav-links {
   display: inline;
   float: right;
   font-size: 18px;
   margin-top: 10px;
 }
 
-.nav > .nav-links > a {
+.nav .nav-links a {
   display: inline-block;
   padding: 15px;
   text-decoration: none;
   color: #efefef;
 }
 
-.nav > .nav-links > a:hover {
+.nav .nav-links a:hover {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.nav > #nav-check {
+.nav #nav-check {
   display: none;
 }
 .opaque-bg {
@@ -441,13 +441,13 @@ label {
 
 }
 @media screen and (max-width: 600px) {
-  .nav > .nav-btn {
+  .nav .nav-btn {
     display: inline-block;
     position: absolute;
     right: 0px;
     top: 10px;
   }
-  .nav > .nav-btn > label {
+  .nav .nav-btn > label {
     display: inline-block;
     width: 50px;
     height: 50px;
@@ -455,16 +455,16 @@ label {
     font-size: 22px;
     color: #fff;
   }
-  .nav > .nav-btn > label:hover {
+  .nav .nav-btn label:hover {
     background-color: rgba(0, 0, 0, 0.3);
   }
-  .nav > .nav-btn > label > span {
+  .nav .nav-btn label span {
     display: block;
     width: 25px;
     height: 10px;
     border-top: 2px solid #eee;
   }
-  .nav > .nav-links {
+  .nav .nav-links {
     position: absolute;
     display: block;
     width: 100%;
@@ -475,14 +475,14 @@ label {
     top: 50px;
     left: 0px;
   }
-  .nav > .nav-links > a {
+  .nav .nav-links a {
     display: block;
     width: 100%;
   }
-  .nav > #nav-check:not(:checked) + .nav-links {
+  .nav #nav-check:not(:checked), .nav-links {
     height: 0px;
   }
-  .nav > #nav-check:checked + .nav-links {
+  .nav #nav-check:checked, .nav-links {
     height: calc(100vh - 50px);
     overflow-y: auto;
   }
