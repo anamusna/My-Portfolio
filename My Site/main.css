@@ -93,6 +93,7 @@ body {
   width: 100%;
   background: transparent;
   position: fixed;
+  z-index: 999;
 }
 
 .nav > .nav-header {
