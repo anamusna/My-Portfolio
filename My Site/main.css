@@ -14,7 +14,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  z-index: -55;
+  z-index: -2;
   margin: auto;
   height: 100vh;
   width: 100%;
@@ -24,7 +24,7 @@ body {
   float: left;
   height: 100vh;
   width: 100%;
-  z-index: -11;
+  z-index: -1;
   text-align: center;
   align-content: center;
   background: transparent;
@@ -371,7 +371,7 @@ label {
   width: 100%;
   left: 0px;
   bottom: 0px;
-  /*margin-top: 20px;*/
+z-index: -999;
 }
 .mainfooter p {
   padding-top: 60px;
