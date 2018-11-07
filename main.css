@@ -14,7 +14,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  z-index: -55;
+  z-index: -2;
   margin: auto;
   height: 100vh;
   width: 100%;
@@ -24,7 +24,7 @@ body {
   float: left;
   height: 100vh;
   width: 100%;
-  z-index: -11;
+  z-index: -1;
   text-align: center;
   align-content: center;
   background: transparent;
@@ -70,15 +70,18 @@ body {
 }
 .nav.solid {
   margin: auto;
-  background-color: #333;
+  /*background-color: #333;*/
   transition: background-color 1s ease 0s;
   box-shadow: 0px 0px 10px 0px rgba(19, 35, 47, 0.4);
   height: auto;
   z-index: 999;
-}
-.nav.solid a {
+  height: 80px;
   color: tomato;
 }
+.nav.solid .nav-links a {
+  color: tomato;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -87,52 +90,53 @@ body {
   margin: 0px;
   font-family: 'segoe ui';
 }
-
 .nav {
   height: 80px;
   width: 100%;
   background: transparent;
   position: fixed;
+  z-index: 999;
+  color: #ffffff;
 }
 
-.nav .nav-header {
+.nav > .nav-header {
   display: inline;
- 
 }
 
-.nav .nav-header .nav-title {
+.nav > .nav-header > .nav-title {
   display: inline-block;
   font-size: 22px;
-  color: #fff;
+  /*color: #fff;*/
   padding: 15px;
    margin-top: 10px;
 }
 
-.nav .nav-btn {
+.nav > .nav-btn {
   display: none;
 }
 
-.nav .nav-links {
+.nav > .nav-links {
   display: inline;
   float: right;
   font-size: 18px;
   margin-top: 10px;
 }
 
-.nav .nav-links a {
+.nav > .nav-links > a {
   display: inline-block;
   padding: 15px;
   text-decoration: none;
   color: #efefef;
 }
 
-.nav .nav-links a:hover {
+.nav > .nav-links > a:hover {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.nav #nav-check {
+.nav > #nav-check {
   display: none;
 }
+
 .opaque-bg {
   margin-left: auto;
   margin-right: auto;
@@ -292,8 +296,7 @@ body {
   margin: auto;
 }
 .contact {
-  z-index: 4;
-  margin-bottom: 20vh;
+  padding-bottom: 2vh;
 }
 .contact-form {
   width: 80%;
@@ -362,16 +365,17 @@ label {
   float: left;
   margin: auto;
   background-color: #333;
-  position: fixed;
-  z-index: -999;
+  /*position: fixed;*/
 }
-.mainfooter {
+footer{
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #333;
   margin-top: 20px;
   justify-content: center;
   width: 100%;
-  left: 0px;
-  bottom: 0px;
-  /*margin-top: 20px;*/
 }
 .mainfooter p {
   padding-top: 60px;
@@ -441,30 +445,33 @@ label {
 
 }
 @media screen and (max-width: 600px) {
-  .nav .nav-btn {
+  .nav{
+    background-color: #333
+  }
+  .nav > .nav-btn {
     display: inline-block;
     position: absolute;
-    right: 0px;
+    right: 10px;
     top: 10px;
   }
-  .nav .nav-btn > label {
+  .nav > .nav-btn > label {
     display: inline-block;
     width: 50px;
     height: 50px;
     padding: 13px;
     font-size: 22px;
-    color: #fff;
+    color: #ccc;
   }
-  .nav .nav-btn label:hover {
+  .nav > .nav-btn > label:hover {
     background-color: rgba(0, 0, 0, 0.3);
   }
-  .nav .nav-btn label span {
+  .nav > .nav-btn > label > span {
     display: block;
     width: 25px;
     height: 10px;
     border-top: 2px solid #eee;
   }
-  .nav .nav-links {
+  .nav > .nav-links {
     position: absolute;
     display: block;
     width: 100%;
@@ -475,19 +482,16 @@ label {
     top: 50px;
     left: 0px;
   }
-  .nav .nav-links a {
+  .nav > .nav-links > a {
     display: block;
     width: 100%;
   }
-  .nav #nav-check:not(:checked), .nav-links {
+  .nav > #nav-check:not(:checked) + .nav-links {
     height: 0px;
   }
-  .nav #nav-check:checked, .nav-links {
+  .nav > #nav-check:checked + .nav-links {
     height: calc(100vh - 50px);
     overflow-y: auto;
-  }
-  .email-btn {
-    margin-bottom: 30vh;
   }
   * {
     overflow: visible;
