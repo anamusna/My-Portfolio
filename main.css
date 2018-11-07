@@ -70,16 +70,18 @@ body {
 }
 .nav.solid {
   margin: auto;
-  background-color: #333;
+  /*background-color: #333;*/
   transition: background-color 1s ease 0s;
   box-shadow: 0px 0px 10px 0px rgba(19, 35, 47, 0.4);
   height: auto;
   z-index: 999;
   height: 80px;
-}
-.nav.solid a {
   color: tomato;
 }
+.nav.solid .nav-links a {
+  color: tomato;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -94,6 +96,7 @@ body {
   background: transparent;
   position: fixed;
   z-index: 999;
+  color: #ffffff;
 }
 
 .nav > .nav-header {
@@ -103,7 +106,7 @@ body {
 .nav > .nav-header > .nav-title {
   display: inline-block;
   font-size: 22px;
-  color: #fff;
+  /*color: #fff;*/
   padding: 15px;
    margin-top: 10px;
 }
@@ -293,8 +296,7 @@ body {
   margin: auto;
 }
 .contact {
-  z-index: 4;
-  margin-bottom: 20vh;
+  padding-bottom: 2vh;
 }
 .contact-form {
   width: 80%;
@@ -363,16 +365,17 @@ label {
   float: left;
   margin: auto;
   background-color: #333;
-  position: fixed;
-  z-index: -999;
+  /*position: fixed;*/
 }
-.mainfooter {
+footer{
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #333;
   margin-top: 20px;
   justify-content: center;
   width: 100%;
-  left: 0px;
-  bottom: 0px;
-z-index: -999;
 }
 .mainfooter p {
   padding-top: 60px;
@@ -442,6 +445,9 @@ z-index: -999;
 
 }
 @media screen and (max-width: 600px) {
+  .nav{
+    background-color: #333
+  }
   .nav > .nav-btn {
     display: inline-block;
     position: absolute;
@@ -454,7 +460,7 @@ z-index: -999;
     height: 50px;
     padding: 13px;
     font-size: 22px;
-    color: #fff;
+    color: #ccc;
   }
   .nav > .nav-btn > label:hover {
     background-color: rgba(0, 0, 0, 0.3);
