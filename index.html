@@ -190,31 +190,26 @@
     <div class="row section-banner">
       <span class="section-title about">contact</span>
     </div>
+
     <div class="contact-form">
-      <form action="/action_page.php">
-        <fieldset style="height: 220px;">
-          <label>Name *</label>
-          <input type="text" name="name" placeholder="Your name..">
-
-          <label>Email *</label>
-          <input type="text" name="email" placeholder="Your email..">
-
-          <label>Subject</label>
-          <input type="text" name="subject" placeholder="Your subject..">
-
-        </fieldset>
-        <br>
-        <fieldset>
-          <label>Message *</label>
-          <textarea id="message" name="subject" style="height:80px" placeholder="Write something.."></textarea>
-
-          <input class="btn" type="submit" name="submit" value="Send">
-          <div class="email-btn">
-              <button class="btn-email" type="button" onclick="location.href='mailto:ansumana.d@yahoo.com'">
-                Send an email</button>
-            </div>
-        </fieldset>
-      </form>
+      <section id="contact-form">
+        <div class="content">
+          <div id="form">
+            <form action="" id="contactForm" method="post">
+              <span>Name *</span>
+              <input type="text" name="name" class="name" placeholder="Your name" tabindex=1 />
+              <span>Email *</span>
+              <input type="text" name="email" class="email" placeholder="Your email" tabindex=2 />
+              <span>Message</span>
+              <textarea class="message" placeholder="Write something.." tabindex=4></textarea>
+              <input class="btn" type="submit" name="submit" value="Send" class="submit" tabindex=5>
+              <div class="email-btn">
+                <button class="btn-email" type="button" onclick="location.href='mailto:ansumana.d@yahoo.com'">
+                  Send an email</button>
+              </div>
+            </form>
+          </div>
+    </section>
     </div>
     </div>
 
