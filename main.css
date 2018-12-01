@@ -316,9 +316,9 @@ textarea {
 }
 textarea {
   padding: auto;
+  height: 100px;
 }
 .submitForm{
-  justify-content: center;
   margin: 20px auto;
 }
 .alert {
@@ -338,6 +338,7 @@ button[type="submit"] {
   border: none;
   cursor: pointer;
   border-radius: 5px;
+  font-size: 22px;
 }
 
 button[type="submit"]:hover {
@@ -370,7 +371,7 @@ label {
   cursor: pointer;
   color: green;
   background: transparent;
-  max-width: 200px;
+  max-width: 300px;
 }
 .btn-email {
   border-radius: 5px;
@@ -379,10 +380,9 @@ label {
   margin: auto;
   font-size: 20px;
   cursor: pointer;
-  color: red;
+  color: blue;
   background: transparent;
   float: right;
-  max-width: 200px;
   /*background-color: #4caf50;*/
 }
 .footer-content {
