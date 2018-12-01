@@ -8,6 +8,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase.js"></script>
   <link rel="stylesheet" href="main.css" />
   <title>ansumana</title>
 </head>
@@ -193,17 +194,18 @@
 
     <div class="contact-form">
       <section id="contact-form">
+          <div class="alert">Your message has been sent!</div>
         <div class="content">
           <div id="form">
-            <form action="" id="contactForm" method="post">
+              <form id="contactForm">
               <span>Name *</span>
-              <input type="text" name="name" class="name" placeholder="Your name" tabindex=1 />
+              <input type="text" name="name" class="name" id="name" placeholder="Your name" tabindex=1 required/>
               <span>Email *</span>
-              <input type="text" name="email" class="email" placeholder="Your email" tabindex=2 />
+              <input type="text" name="email" class="email" id="email" placeholder="Your email" tabindex=2 required/>
               <span>Message</span>
-              <textarea class="message" placeholder="Write something.." tabindex=4></textarea>
-              <input class="btn" type="submit" name="submit" value="Send" class="submit" tabindex=5>
-              <div class="email-btn">
+              <textarea class="message" id="message" placeholder="Write something.." tabindex=5 required></textarea>
+              <button type="submit" tabindex=4>Submit</button>
+              <div class="btn" class="email-btn">
                 <button class="btn-email" type="button" onclick="location.href='mailto:ansumana.d@yahoo.com'">
                   Send an email</button>
               </div>

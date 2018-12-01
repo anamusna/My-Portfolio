@@ -317,6 +317,16 @@ textarea {
 textarea {
   padding: auto;
 }
+.alert {
+  margin-bottom: 1em;
+  padding: 10px;
+  background: #49b0e7;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+  border-radius: 2.5px;
+  display: none;
+}
 input[type="submit"] {
   background-color: #4caf50;
   color: white;
