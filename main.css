@@ -317,7 +317,21 @@ textarea {
 textarea {
   padding: auto;
 }
-input[type="submit"] {
+.submitForm{
+  justify-content: center;
+  margin: 20px auto;
+}
+.alert {
+  margin-bottom: 1em;
+  padding: 10px;
+  background: #49b0e7;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+  border-radius: 2.5px;
+  display: none;
+}
+button[type="submit"] {
   background-color: #4caf50;
   color: white;
   padding: 10px 20px;
@@ -326,7 +340,7 @@ input[type="submit"] {
   border-radius: 5px;
 }
 
-input[type="submit"]:hover {
+button[type="submit"]:hover {
   background-color: #45a049;
 }
 fieldset {
@@ -341,11 +355,22 @@ fieldset {
 label {
   float: left;
 }
+
 .email-btn {
   float: right;
   max-width: 200px;
   margin: auto;
   text-align: center;  
+
+  border-radius: 5px;
+  border: 1px solid #3498db;
+  padding: 20px auto;
+  margin: auto;
+  font-size: 20px;
+  cursor: pointer;
+  color: green;
+  background: transparent;
+  max-width: 200px;
 }
 .btn-email {
   border-radius: 5px;
@@ -356,6 +381,8 @@ label {
   cursor: pointer;
   color: red;
   background: transparent;
+  float: right;
+  max-width: 200px;
   /*background-color: #4caf50;*/
 }
 .footer-content {
