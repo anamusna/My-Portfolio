@@ -547,7 +547,9 @@ section h3.section-subheading {
 	/* 	border: 1px solid #ccc; */
 	margin: 0 0 15px;
 }
-
+#portfolio .portfolio-item img {
+	height: 600px;
+}
 #portfolio .portfolio-item .portfolio-link {
 	display: block;
 	position: relative;
